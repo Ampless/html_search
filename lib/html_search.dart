@@ -20,6 +20,20 @@ dom.Element htmlSearchByPredicate(
 dom.Element htmlSearchByClass(List<dom.Element> rootNode, String className) =>
     htmlSearchByPredicate(rootNode, (e) => e.className.contains(className));
 
+List<dom.Element> htmlSearchAllByPredicate(
+  List<dom.Element> rootNode,
+  bool Function(dom.Element) predicate,
+) {
+  final found = <dom.Element>[];
+  for (final e in rootNode) {
+    if (predicate(e)) {
+      found.add(e);
+    }
+    found.addAll(htmlSearchAllByPredicate(e.children, predicate));
+  }
+  return found;
+}
+
 List<dom.Element> htmlParse(String raw) {
   final parser = HtmlParser(raw);
   final result = parser.parse();
