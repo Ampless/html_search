@@ -34,11 +34,4 @@ List<dom.Element> htmlSearchAllByPredicate(
   return found;
 }
 
-List<dom.Element> htmlParse(String raw) {
-  final parser = HtmlParser(raw);
-  final result = parser.parse();
-  if (parser.errors != null && parser.errors.isNotEmpty) {
-    throw parser.errors;
-  }
-  return result.children;
-}
+List<dom.Element> htmlParse(String raw) => HtmlParser(raw).parse().children;

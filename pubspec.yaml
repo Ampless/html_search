@@ -2,7 +2,7 @@ name: html_search
 description: A package to quickly search though HTML.
 homepage: https://github.com/Ampless/html_search
 
-version: 0.0.2
+version: 0.0.3
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
