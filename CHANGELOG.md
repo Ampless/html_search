@@ -1,3 +1,7 @@
+## 0.1.0-nullsafety.0
+
+* Unsound null-safety
+
 ## 0.0.3
 
 * Nobody is HTML standard-compliant, so we might not want to throw on parser error.

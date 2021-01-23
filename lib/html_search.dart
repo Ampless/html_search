@@ -1,7 +1,7 @@
 import 'package:html/dom.dart' as dom;
 import 'package:html/parser.dart';
 
-dom.Element htmlSearchByPredicate(
+dom.Element? htmlSearchByPredicate(
   List<dom.Element> rootNode,
   bool Function(dom.Element) predicate,
 ) {
@@ -17,7 +17,7 @@ dom.Element htmlSearchByPredicate(
   return null;
 }
 
-dom.Element htmlSearchByClass(List<dom.Element> rootNode, String className) =>
+dom.Element? htmlSearchByClass(List<dom.Element> rootNode, String className) =>
     htmlSearchByPredicate(rootNode, (e) => e.className.contains(className));
 
 List<dom.Element> htmlSearchAllByPredicate(
