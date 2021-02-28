@@ -1,3 +1,7 @@
+## 0.1.1
+
+* Sound null-safety
+
 ## 0.1.0-nullsafety.0
 
 * Unsound null-safety

@@ -2,13 +2,13 @@ name: html_search
 description: A package to quickly search though HTML.
 homepage: https://github.com/Ampless/html_search
 
-version: 0.1.0-nullsafety.0
+version: 0.1.1
 
 environment:
   sdk: ">=2.12.0-0 <3.0.0"
 
 dependencies:
-  html: ^0.14.0+4
+  html: ^0.15.0
 
 dev_dependencies:
   pedantic: ^1.10.0-nullsafety.3
