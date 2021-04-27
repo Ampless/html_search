@@ -1,3 +1,7 @@
+## 0.2.0
+
+* Changed most APIs sensibly
+
 ## 0.1.1
 
 * Sound null-safety
