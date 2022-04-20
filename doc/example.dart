@@ -1,8 +1,3 @@
-# html\_search
-
-A really small package for searching in HTML.
-
-```dart
 import 'package:html_search/html_search.dart';
 
 void main() =>
@@ -10,4 +5,3 @@ void main() =>
         .search((e) => e.id == 'myparagraph')
         .map((e) => e.outerHtml)
         .toList());
-```
