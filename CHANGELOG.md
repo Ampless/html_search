@@ -1,3 +1,9 @@
+## 0.3.1
+
+- Avoid instantiating an extra iterator in `searchFirst`.
+- `dart 3`.
+- `lints 4`.
+
 ## 0.3.0
 
 - Changed most APIs sensibly

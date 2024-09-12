@@ -9,8 +9,8 @@ extension HtmlSearch on Iterable<Element> {
       ].reduce((v, e) => [...v, ...e]);
 
   Element? searchFirst(bool Function(Element) predicate) {
-    final e = search(predicate);
-    return e.isEmpty ? null : e.first;
+    final i = search(predicate).iterator;
+    return i.moveNext() ? i.current : null;
   }
 }
 
