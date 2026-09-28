@@ -1,3 +1,10 @@
+## 0.3.2
+
+- Add `searchLast`
+- Use `firstOrNull` in `searchFirst`
+- Reformat with Dart `3.10`
+- `lints 6`
+
 ## 0.3.1
 
 - Avoid instantiating an extra iterator in `searchFirst`.
